@@ -1,0 +1,43 @@
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.Random;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        int user,system;
+        Scanner kb=new Scanner(System.in);
+        Random rand=new Random();
+        int usercount=0;
+        int systemcount=0;
+          int n=1;
+        System.out.println("1.rock\n2.paper\n3.scirror");
+        while(n<=5){
+        System.out.print("enter the number choosing by the user:");
+        user=kb.nextInt();
+      
+        system=rand.nextInt(3)+1;
+        System.out.println("system selected number :"+system);
+     
+        if(user==1 &&system==1)
+         System.out.println("Draw");
+        else if(user==1 &&system==2)
+         System.out.println("you lose");
+        else if(user==1 && system==3)
+         System.out.println("you win");
+         else if(user==2 &&system==1)
+         System.out.println("you win");
+        else if(user==2 && system==2)
+         System.out.println("draw");
+        else if(user==2 && system==3)
+        System.out.println("you lose");
+         else if(user==3 &&system==1)
+         System.out.println("you lose");
+        else if(user==3 && system==2)
+         System.out.println("you win");
+        else if(user==3 && system==3)
+        System.out.println("Draw");
+        n=n+1;
+        }}
+    }
